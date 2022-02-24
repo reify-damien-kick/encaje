@@ -1,6 +1,6 @@
 (ns encaje.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defmacro -- [& body]
+  "Just a utility to give indentation: a threading macro which does
+  nothing but allows for some better indentation (IMNSHO)"
+  `(~@body))
